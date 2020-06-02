@@ -15,7 +15,6 @@ docker run --detach \
     --name=pgsql \
     --network=sourcegraph \
     --restart=always \
-    --cpus=4 \
     --memory=2g \
     -v $VOLUME:/data/ \
     index.docker.io/sourcegraph/postgres-11.4:3.16.0@sha256:63090799b34b3115a387d96fe2227a37999d432b774a1d9b7966b8c5d81b56ad
